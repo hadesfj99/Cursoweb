@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+    border:dotted grey 1px;
+    background-color: rgb(10,10,10);
+}
+body
+{
+    background-color: black;
+    color:white;
+
+}
+.cabecera
+{
+    background-color: rgb(10,10,70);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cabecera__imagen
+{
+background-color: rgb(15,150,70);
+padding: 5px;
+position: relative;
+width:fit-content;
+height: fit-content;
+
+}
+.cabecera__imagen img 
+{
+    padding: 5px;
+}
+.cabecera__imagen figcaption
+{
+    width: 200px;
+}
+main
+{
+    background-color: blueviolet;
+}
