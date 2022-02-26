@@ -17,79 +17,79 @@ body
 {
     background-color: rgb(10,10,70);
     height: fit-content;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     border: none;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
 }
-.cabecera__imagen
-{
-    position: relative;
-    width:10vw;
-    min-width: 140px;
-    height: fit-content;
-    background-color: rgb(70,0,200);
-    border: none;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    margin-right: 10px;
-    align-items: center;
-    box-shadow: rgba(70, 0, 200,0.99) 10px -2px 20px 9px;
-}
-.cabecera__imagen img 
-{
-    position: relative;
-    height: 100px;
-    
-    border: solid 2px rgba(0, 110, 253, 0.8);
-    border-radius: 50px;
-    box-shadow: inset 0px 0px 15px 1px rgba(0, 110, 253, 0.8);
-}
-.cabecera__imagen figcaption
-{
-    font-family:'Brush Script MT';
-    font-size: 20px;
-    border: none ;
-    border-radius: 15px;
-  
-}
-.cabecera__nav
-{
-    position:relative;
-    border: none;
-    width: 70vw;
-}
-.cabecera__nav ul
-{
-    display: flex;
-    width: 50vw;
-    min-width: 300px;
-    justify-content: space-around;
-    padding: 5px;
-    border: none;
-    list-style: none;
-}
-.cabecera__nav ul li
-{
-    border: none;
-    color:white;
-    font-size: 18px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    .cabecera__imagen
+    {
+        position: relative;
+        width:10vw;
+        min-width: 140px;
+        height: fit-content;
+        background-color: rgb(70,0,200);
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin-right: 10px;
+        align-items: center;
+        box-shadow: rgba(70, 0, 200,0.99) 10px -2px 20px 9px;
+    }
+        .cabecera__imagen img 
+        {
+            position: relative;
+            height: 100px;
+            
+            border: solid 2px rgba(0, 110, 253, 0.8);
+            border-radius: 50px;
+            box-shadow: inset 0px 0px 15px 1px rgba(0, 110, 253, 0.8);
+        }
+        .cabecera__imagen figcaption
+        {
+            font-family:'Brush Script MT';
+            font-size: 20px;
+            border: none ;
+            border-radius: 15px;
+        
+        }
+    .cabecera__nav
+    {
+        position:relative;
+        border: none;
+        width: 70vw;
+    }
+        .cabecera__nav ul
+        {
+            display: flex;
+            width: 50vw;
+            min-width: 300px;
+            justify-content: space-around;
+            padding: 5px;
+            border: none;
+            list-style: none;
+        }
+            .cabecera__nav ul li 
+            {
+                border: none;
+                color:white;
+                font-size: 18px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .cabecera__nav ul li a:link{color:cyan;}
+            .cabecera__nav ul li a:visited{color:rgb(4, 109, 104); }
+            .cabecera__nav ul li a:hover
+            {
+                box-shadow: rgb(8, 114, 235) 0px 0px 10px 10px;
+                background-color: rgb(8, 114, 235) ;
+                border-radius: 15px;
+                color:aquamarine;
+            }
 
-.cabecera__nav ul li:hover
-{
-    box-shadow: rgb(8, 114, 235) 0px 0px 10px 10px;
-    background-color: rgb(8, 114, 235) ;
-    border-radius: 15px;
-    color:aquamarine;
-}
 
-.cabecera__nav ul li a:link{color:cyan;}
-.cabecera__nav ul li a:visited{color:rgb(4, 109, 104);}
 main
 {
     background-color: blue;
