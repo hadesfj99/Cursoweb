@@ -1,0 +1,33 @@
+*{margin:0;
+padding: 0;
+box-sizing: border-box;
+border: dotted 1px gray;}
+
+body
+{
+    background-color: black;
+    color: white;
+}
+main{background-color: rgb(36, 36, 36);}
+
+.cuerpo
+{
+    display: inline-block;
+    width: 80vw;
+}
+.aside
+{
+    display: inline-block;
+    width:19vw;
+    height:max-content;
+    position: relative;
+    
+}
+.aside p{padding: 5px;}
+.aside li
+{
+    padding: 5px; 
+    position: relative; 
+    left: 25px;
+    width: fit-content;
+}
