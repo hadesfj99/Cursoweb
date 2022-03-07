@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  Pagina de Fernando</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 
@@ -12,12 +17,11 @@
 <body>
 
     <!-- ----------------------CABECERA---------------------------->
-
     <header class="cabecera">
         <figure class="cabecera__imagen"> 
             <img src="./img/LOGO FDJ1.png" alt="Logo del desarrollador">
             <figcaption> Un Sitio Para Vos</figcaption> 
-    </figure>
+        </figure>
         <nav class="cabecera__nav">
             <ul>
                 <li> <a href="#">Principal </a></li>
@@ -26,40 +30,185 @@
             </ul>
         </nav>
     </header>
+    <!--------------------------FIN DE CABECERA------------------------->
 
-    <aside class="aside">
-        <p>Indice de Contenido </p>
 
-       <ol>
-           <li>introduccion</li>
-           <li>fundamentos</li>
-            <li>html</li>
-       </ol>
-    </aside>
+    <!--------------------------CUERPO PRINCIPAL------------------------>
+    <main>
 
-    <main class="cuerpo">
-        <h1>Aprendiendo a Crear mi sitio web</h1>
-        <section>
-            <article class="articulo">
-                <h2> Bases de HTML</h2>
-                <h3>Introduccion</h3>
-                <P> 
-                    Este articulo desarrolla los conceptos baiscos de HTML y parte desde los fundamentos conceptuales. En articulos posteriores me enfoco en conceptos cada vez mas avanzados. El objetico es crear un sitio utilizando lo aprendido y al mismo tiempo dejar un registro para poder recordar de manera rapida conceptos q pueda olvidar con el tiempo.
-                </P>
-                <p>
-                    HTML es un lenguaje de programacion que esta formado por etiquetas. La sintaxis basica es: etiqueta texto etiqueta. las etiquetas a su ves pueden tener una o mas etiquetas dentro suyo y esta a su vez tambien, formando una especie de arbol donde cada etiqueta tiene un padre y puede tener varios hijos. Usando esta ruta "genealogica" puede accederse a cualquier elemento del archivo.
-                </p> 
-                <p>
+        <!-------------barra lateral----------->
+        <aside class="aside">
+            <h5>Indice de Contenido</h5>
+            <br>
+            <h6>Introduccion</h6>
+            <br>
+            <h6>HTML</h6>
+            <ol>
+                <li>¿Qué es HTML?</li>
+                <li>Elementos de HTML</li>
+                <li>Atributos</li>
+                <li>Semantica de HTML</li>
+                <li>Accesibilidad</li>
+            </ol>
+            <H6>CSS bases</H6>
+            <ol>
+                <li>¿Qué es CSS?</li>
+                <li>Selectores</li>
+                <li>Propiedades</li>
+                <li>Valores y Unidades</li>
+                <li>Especificidad y Herencia</li>
+                <li>Modelo de cajas</li>
+                <li>Posiciones</li>
+            </ol>
+            <h6>CSS Avanzado</h6>
+            <ol>
+                <li>Sombras</li>
+                <li>Gradientes</li>
+                <li>Flexbox</li>
+                <li>Grid</li>
+                <li>Transformers</li>
+                <li>Transiciones</li>
+                <li>Animaciones</li>
+                <li>Variables</li>
+                <li>Media Quieries</li>
+            </ol>
+            <h6> LayOuts</h6>
+            <h6>Preprocesadores</h6>
+            <ul>
+                <li>SAS</li>
+                <li>LESS</li>
+                <li>PostCSS</li>
+            </ul>
+            <h6>CSS Frameworks</h6>
+            <ul>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>Materialize</li>
+            </ul>
+
+        </aside>
+        <!---------fin de barra lateral--------->
+
+        <!---------articulos-------------------->
+
+        <div class="cuerpo">
+            <h1>Aprendiendo a Crear mi sitio web</h1>
+            <section>
+                <article>
+                    <h3>Introduccion</h3>
+                    <p>Esta web te enseña los pasos que debes seguir para convertirte en un desarrollador web. Lo primero que debes saber es que no es un camino largo, son 3 ja. Se deben aprender 3 lenguajes de programacion, HTML, CSS Y JAVASCRIPT. Cada lenguaje tiene sus propia semantica y caracterisitcas. HTML da el esqueleto de nuestro sitio. CSS da la forma, el color los detalles la posicion y demas caracteristicas visuales del sitio. Javascript da la interactividad, la posibilidad de enviar y recibir datos por parte del usuario, incluso crear juegos y todo tipo de otras cosas junto con los otros dos lenguajes</p>
+                    <p>Lo primero sera conocer las bases de HTML.  Aunque en lrealidad lo mejor seria ir aprendiendo los 3 lenguajes a la vez, en su aspecto mas basico. En el inice está plasmado cual es el orden recomendado para encarar el camino. tener en cuenta que mientras mas se avanza mas complejos seran los temas y sera necesario haber aprendido los conceptos anteriores. asi que sin mas, Emepcemos este camino y buena suerte.</p>
+                </article>
+                <article class="articulo">
+                    <h2> Bases de HTML</h2>
+                    <h3>¿Que es HTML?</h3>
+                    <P> 
+                        Este articulo desdse los fundamentos conceptuales basicos. En articulos posteriores me enfoco en conceptos cada vez mas avanzados. El objetico es crear un sitio utilizando lo aprendido y al mismo tiempo dejar un registro para poder recordar de manera rapida conceptos q pueda olvidar con el tiempo.
+                    </P>
+                    <br></br>
+                    <p>
+                        <i> <b>HTML</b> es un lenguaje de programacion que esta estructurado por etiquetas. </i>La sintaxis basica es: etiqueta texto etiqueta. las etiquetas a su ves pueden tener una o mas etiquetas dentro suyo y esta a su vez tambien, formando una especie de arbol donde cada etiqueta tiene un padre y puede tener varios hijos. Usando esta ruta "genealogica" puede accederse a cualquier elemento del archivo.
+                    </p> 
+                </article>
+                <article class="articulo">
+
+                    <h2>Aprendiendo  CSS</h2>
+                    <h3>Propiedad Flex box</h3>
+                    <p><b>flex-box</b> es uno de los valores que puede tomar la propiedad <b>dispaly</b> y se caracteriza por que todos los elementos dentro del contenedor adoptan una organizacion bastante peculiar. Al inicio, antes de que se den nuevos valores a las propiedades flex, si el tamaño de los contenedores no ha sido definido, estos se estiran equitativamente de manera que el tamaño de todos es el mismo y ocupan todo el ancho de la pagina. Si el ancho de la pagina cambia tambien el tamaño de los contenedores hijos</p>
+                    <h4>flex-direction</h4>
+                    <p>
+                        Lo primero que debemos entender es que una vez que el contenedor padre toma el valor de flexbox en su propiedad de diplay, en este se forman 2 ejes ortogonales, uno vertical y otro horizontal cada uno con una direccion. Para definir cual es el eje principal y cual es la direccion que toma se utiliza la propiedad <b>flex-direction</b>. Esta propiedad puede tomar 4 valores:
+                        <ul>
+                            <li> <b>row</b> (fila en ingles) para señala al eje horizontal como principal, los elementos se van alineando de izquierda a derecha.</li>
+                            <li><b>row-reverse</b> Es lo mismo que el primero solo que los items se alinean de derecha a izquierda. </li>
+                            <li><b>column</b> señala al eje vertical como principal y los elementos se alinean de arriba hacia abajo. </li>
+                            <li><b>column-reverse</b> Es similar al anterior pero los elementeos se ordenand de abajo hacia arriba.Por defecto el eje principal es el horizontal.</li>
+                        </ul> 
+                    </p>
+                    <img src="./img/flexbox.jpg" alt="contenedor row y column" class="img1">
+
+                    <h4> Flex Wrap</h4>
+                    <p>
+                         La segunda propiedad que toca conocer es <b>flex-wrap</b>. Esta propiedad puede tomar solo 2 valores: 
+                         <ul>
+                             <li><b>wrap</b>: Permite que los elementos contenidos pasen a una segunda fila con su propio eje principald a la vez que subdivide el contenedor padre en tantas partes como filas adicionales (o columnas). Las subdiviciones son iguales y cada eje se comporta como si fuera uno independiete.</li>
+                             <li><b>no-wrap</b> es el que toma por defecto esta propiedad. Si este es el valor que toma la propiedad, los contenedores hijos se comportan manteniendose en un sola fila (o columba). si el tamaño de los contenedores esta definida estos incluso pueden atravesar el borde del contenedor padre si este no es lo bastante grade para contenerlos. Cuando el tamaño de los contenedores hijos no esta definidos estos se adaptan al contenedor padre estirandose de manera equitativa.</li>
+                         </ul>                                            
+                    </p>
+                    <figure>
+                        <img src="./img/flexbox2.jpg" alt="contenedor wrap y no-wrap" class="img1">
+                    </figure>
+                    <h4>flex-flow</h4>                    
+                    <p><b>flex-flow</b>: es un atajo que permite definir flex-direction y flex-wrap en una sola propiedad (en ese orden). Por ejemplo: flex-flow: row wrap;</p>
+                    <hr>
+
+
+                    <p> A continuacion veremos la manera de controlar la posicion de este o estos ejes. </p>
+                    <h4>Alinear items</h4>
+                    <p>
+                        La propiedad <b>align-items</b> sirve para definir la ubicacion de los contenedores respecto a el eje secundario. Por ejemplo, en el caso de que flex-direction:row, esta propiedad (aline-items) mueve los elementos hacia arriba o hacia abajo. <span>Recordar que si hay mas de una fila de elementos (o columna, normalmente cuando wrap es activo) el contenedor se subdivide entre el numero de filas (o columnas) y los elementos se ubican dentro de la subdivicion que les correspone como si fuera un contenedor diferente.</span> Esta propiedad puede tomar 5 valores: 
+                        <ul>
+                            <li><b>flex-start:</b> Alinea los items hacia arriba o a la derecha dependiendo si el flex-direction es row o column. Este es el valor que viene por defecto. Si existe alguna subdivicion los elementos se ubicaran dentro de esta.</li>
+                            <li><b>flex-end:</b> Alinea los items hacia abajo o hacia la derecha dependiendo si el flex-direction es row o column. Es similar a flex-star pero los elementeos se alienan hacia el lado opuesto.</li>
+                            <li><b>center:</b> Alinea los items en el centro del eje principal. Si hay alguna subdivicion los elementos se alienan en el centro de la subdivicion.</li>
+                            <li><b>strech:</b> alinea los elementos como flex-star pero aparte estira los bordes paraleleos al eje principal hasta que ocupan todo el alto (en caso de row) o ancho (en el cso de column) del contenedor padre. <span>Nota: si los contenedores hijos tienen sus dimenciones definidas strech funciona igual que flex-star.</span></li>
+                            <li><b>baseline:</b> Alinea los contenedores de tal manera que el texto dentro de los contenedores que de al mismo nivel</li>
+                        </ul>
+                    </p>
                     
-                </p>
-            </article>
-        </section>
-   
-      
+                    <figure>
+                        <img src="./img/felx3.jpg" alt="" class="img1">
+                        <img src="./img/felx4.jpg" alt="" class="img1">
+                    </figure>
+                    <h4> Contenido justificado</h4>
+                    <p>
+                        <b>justify-content</b> desplaza los elementos contendidos en el sientido del eje principal, a difienrecia de la anterior propiedad que causa desplazameintos en sentido perpendicular a este eje.
+                        <ul>
+                            <li> <b> center</b>: agrupa todos los contenedores hacia el centro del eje principal</li> 
+                            <li><b>flex-star</b>: desplaza todos los contenedores hacia el inicio del eje principal </li>
+                            <li><b>felx-end</b>: desplaza todo los contenedores hacia el final del eje principal</li>
+                            <li><b>space-between</b>: separa lo mas posible un contenedor del otro colocandols contra los borders si es ncesario.</li>
+                            <li><b>space-arround</b>: genera un espacio (margin) al rededor de cada contenedor de igual ancho de maenra que el espacio entre dos contenedores es la suma del espacio de cada uno pero no asi en las paredes q termina tomando la mitad de ese valor.</li>
+                            <li><b>space-evenly</b>: el espacio generado entre los contenedores y entre lo contenedores y la pared es siepre el mismo</li>
+                        </ul>
+                    </p>
+                    <figure>
+                        <img src="./img/flexbox5.jpg" alt="" class="img5">
+                        <img src="./img/flexbox6.jpg" alt="" class="img5">
+                    </figure>
+                    <h4>Alineado de Contendio</h4>
+                    <p>
+                        La propiedad <b>align-content</b> sirve para manejar la distancia entre los ejes principales entre subdiviciones. Es decir, si un contenedor tiene activa la propiedad esta propiedad no hace nada. Puede tomar 4 valores:
+                        <ul>
+                            <li><b>center</b>: Junta los ejes principales (EP) de cada subdivision lo mas cerca que puede.</li>
+                            <li><b>flex-start</b>: Lleca los EP de cada subdivision lo mas arriba (o a la izquierda) que puede.</li>
+                            <li><b>flex-end</b>:Lleca los EP de cada subdivision lo mas abajo (o a la derecha) que puede.</li>
+                            <li><b>space-between</b>: Separa los EP lo mas que pueda incluso si debe llebarlos contra los bordes del contenedor</li>
+                            <li><b>space-arround</b>: Crea un espacio al rededor de cada EP equitativamente.</li>
+                            <li><b>stretch</b>: Estira los contenedores lo mas que pueda dentro de cada subdivision.</li>
+                        </ul>
+                    </p>
+                    <figure> <img src="./img/flexbox7.jpg" alt="" class="img1"></figure>
+                    <h4>Alineacion individual</h4>
+                        <ul>
+                            <li><b>align-self</b>: Es una propidad que se usa sobre el/los contenedores hijos y sirve para darle su ropia          alineacion individual al contenedor (su propio valor de align-items).</li>
+                            <li><b>flex-grow</b>: Determina la proporcion con la que los elementos con dimenciones no definidas ocupan el espacio disponible en el contendedor padre. La propiedad toma valores numericos enteros desde 0 hasta n. Por defecto todos los elementos traen por valor 0. Cuando se le asigna el valor 1 a algun elemento, este elemento comenzará a expandirse hasta tomar todo el espacio disponible en el sentido del EP , si se le asigna un valor a mas de uno entonces esos elementos se expandiran tomando como proporcion el valor numerico asignado. Asi un par de contenedores q tenga valor grow 1 y 2 se expandiran en proporcion 1 a 2, mientras que el resto de los elementos si los ubiera no sufririan cambio alguno en su tamaño.</li>
+                            <li><b>flex-shrink</b>: Es lo opuesto a flex-grow, es una propiedad que determina los elementos a contraerse y en qué proporcion. La propiedad acepta valores numericos enteros y la contraccion que sufre cada elemento es proporcional a este valor.</li>
+                            <li><b>basis</b>: Define el tamaño base que tendrá un elemento antes de aplicarse la distribucion de espacio.</li>
+                        </ul>
+                    <figure><img src="./img/flexbox8.jpg" alt="" class="img1"></figure>
+                    <h4>Huecos</h4>
+                    <p>Flexbox tambien tiene la propiedad de manejar y configurar los espacios al rededor de los contenedores, son una alternativa a margin y padding. Estas son 2 propiedades son <b>row-gap</b> y <b>column-gap</b>. Ambas propiedades fijan el espacio entre los elementos. el valor es en px o otra unidad de medida ya sea realtiva o absoluta. row-gap separa las filas unas entre otras. column-gap separa las columnas.</p>
+                        <figure><img src="./img/flexbox9.jpg" alt=""class="img1"></figure>
+                </article>
+            </section>           
+        </div>
+        <!--------- fin de articulos--------------->
     </main>
+    <!-----------------------Fin del Cuerpo Principal------------------------>
     
     <footer>
-pie
+            pie
     </footer>
 
 </body>
