@@ -1,0 +1,87 @@
+idea general
+
+crear un repositorio con git init.
+comprobar lo q haya q agregar al repositorio con git status
+con git add aderir archivos a un paso intermendio antes de enviar los cambios al repositorio
+con git commit agregar los cambios preparados con git add
+
+si se comete un error al cargar en git add: puede usarse git reset para borrar
+los archivos preparados para el commit seguido de su nombre(y extencion).
+
+si se quiere dejar de trakear un archivo se puede usar git rm. tener cuidado xq tb elimina el 
+archivo del directorio. si no se quiere borrar el archivo del directorio se debe usa4 -- cached. 
+sin embargo esto no elimina la info de anteriores commit de este archivo.
+
+
+git reset tambien sirve para eliminar commits realizados usando la opcion git reset --hard.
+Si se quiere ignorar un archivo se puede usar git ig
+
+Si se decea empezar a trabajar en una rama diferente a la rama master o main. s puede utilizar 
+la opcion git branch NombreDeLaRama. La rama se crea en el commit actual. para cambiar de 
+commit se puede usar switch o checkout. la diferencia es q checkout nos lleva a cualquier commit. 
+switch nos lleva al ultimo commit de la rama seleccionada. aunque en la practica son casi lo mismo
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+
+git init: Crea un nuevo repositorio en la carpeta actual o reinicia el existente. 
+          El repositorio es una base de datos de se almacenan los pequeños cambios
+          que se realizan en el codigo. Esta informacion es almacenada en una carpeta
+          oculta que por defecto lleva el nombre de git. Existen formas de cambiar el
+          nombre por defecto. 
+
+git status: Se usa para comprobar las actualizaciones pendietes en el repositorio. 
+
+git add: Se usa para cargar archivos en el stage. El stage es un espacio reservado en
+         la memoria ram para donde los cambios se guardan hasta que son guardados en
+         el repositorio.
+         Sintaxis: git add "archivoEntreComillas.extencion"
+
+git rm: elimina el archivo del repositorio y del stage. Es decir, deja de hacer el 
+        seguimiento de cambios del archivo. 
+        Sintaxis: git rm "archivoEntreComillas.extencion". 
+        Atributos: --cached: ya descrito.
+                    --force: Elimina el archivo incluso del disco duro.
+
+git reset: Comando peligorso. mietras que git rm se enfoca en la historia de un solo 
+	   archivo, este comando se enfoca en la de todos, en los commits. tiene 2 
+	   variantes: --hard: borra todas las modificaciones registradas gasta el 
+			      commit seleccionado.
+		      --soft: borra los commits pero deja los stagings.
+		      --head: borra solo los stagings sintocar los commits
+	  	          
+git commit: guarda los datos del stage en el repositorio. Es recomendable usar el 
+            atributo -m para anexar un mensaje donde se explica los cambios realizados.
+            Sintaxis: git commit -m "cambio".
+            Si no se agrega un comentario aparece un cuadro que me pide que lo coloque.
+            Es un editor texto similar a vi. Para agregar el comentario presionamos esc
+            y luego i. Para guardar los cambios se debe presionar esc. contrl+c, Y, y 
+            finalmente enter.
+
+git diff:   Compara dos verisones diferentes del archivo. Necesita como entrada los 2 
+            numeros de commit que se pueden obtener con git log. Primero el mas vieja
+            y luego la version mas reciente. Se puede agregar tambien el nombre del 
+            archivo a comparar, si no se agrega se mostraran los cambios en todos los
+            archivos.  
+
+git show: muestra los cambios realizados en la ultima modificacion.
+
+git config: muestra configuraciones de git. Alunos atributos son 
+            --list para mostrar la configuración por defecto
+            --show--origin nos muestra las configuraciones guardadas y su ubicación.
+            --global user.name muestara el nombre del usuario actual.
+            --global user.name "nombreNuevo" define o cambia de manera global el nombre 
+            del usuario
+            --global user.email es analogo a user.name pero se refiere al email del usuario.
+
+git log: muestra todos los commits que se van realizando.
+
